@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main_div">
+            <input type="text" class="email_input" onclick="borderFunction()" onblur="removeBorder()" placeholder="youremail@gmail.com">
+            <button class="btn">Verify</button>
+        </div>
+    </div>
+
+    <script>
+        const borderFunction=()=>{
+            document.querySelector(".main_div").classList.add("draw-border")
+        }
+        const removeBorder=()=>{
+            document.querySelector(".main_div").classList.remove("draw-border")
+        }
+    </script>
+</body>
+</html>
